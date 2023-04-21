@@ -9,16 +9,16 @@ namespace Inheritance
 {
     public class Vehicle
     {
-        string _Color;
+        string _Color; //creat filed;
 
-        public Vehicle(string color)
+        public Vehicle(string color) //creat constructor with one argument;
         {
             _Color = color;
         }
 
-        public string Color { get => _Color; set => _Color = value; }
+        public string Color { get => _Color; set => _Color = value; } //create properties;
 
-        public override string ToString()
+        public override string ToString() //use override to display the sult;
         {
             return $"{this.GetType()} - {_Color}";
         }
